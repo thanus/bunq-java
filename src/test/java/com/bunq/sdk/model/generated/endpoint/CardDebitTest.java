@@ -5,6 +5,7 @@ import com.bunq.sdk.context.BunqContext;
 import com.bunq.sdk.model.generated.object.CardPinAssignment;
 import com.bunq.sdk.model.generated.object.Pointer;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.math.BigInteger;
@@ -64,6 +65,7 @@ public class CardDebitTest extends BunqSdkTestBase {
    * retrieving the card from the card endpoint and checks this date against the data we have
    * submitted
    */
+  @Ignore
   @Test
   public void orderNewMaestroCardTest() {
     String secondLine = generateRandomSecondLine();

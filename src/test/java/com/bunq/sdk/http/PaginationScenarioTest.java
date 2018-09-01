@@ -7,6 +7,7 @@ import com.bunq.sdk.model.generated.endpoint.PaymentBatch;
 import com.bunq.sdk.model.generated.object.Amount;
 import com.google.gson.Gson;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -72,6 +73,7 @@ public class PaginationScenarioTest extends BunqSdkTestBase {
     );
   }
 
+  @Ignore
   @Test
   public void apiScenarioPaymentListingWithPaginationTest() {
     EnsureEnoughPayments();

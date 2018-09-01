@@ -8,6 +8,7 @@ import com.bunq.sdk.exception.BunqException;
 import com.bunq.sdk.exception.ForbiddenException;
 import org.junit.After;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -27,6 +28,7 @@ public class SessionTest extends BunqSdkTestBase {
   /**
    * Tests deletion of the current session
    */
+  @Ignore
   @Test
   public void deleteSessionTest() {
     SessionContext context = BunqContext.getApiContext().getSessionContext();

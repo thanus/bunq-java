@@ -9,6 +9,7 @@ import com.bunq.sdk.model.generated.object.ShareDetailPayment;
 import org.apache.commons.io.FileUtils;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.File;
@@ -56,6 +57,7 @@ public class DraftShareInviteBankQrCodeContentTest extends BunqSdkTestBase {
    *
    * This test has no assertion as of its testing to see if the code runs without errors
    */
+  @Ignore
   @Test
   public void testDraftShareInviteBankQrCodeContentList() throws Exception {
     byte[] content = DraftShareInviteBankQrCodeContent.list(draftId).getValue();

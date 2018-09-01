@@ -6,6 +6,7 @@ import com.bunq.sdk.http.BunqResponse;
 import com.bunq.sdk.http.Pagination;
 import com.bunq.sdk.model.generated.object.Amount;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -40,6 +41,7 @@ public class PaymentTest extends BunqSdkTestBase {
    *
    * This test has no assertion as of its testing to see if the code runs without errors
    */
+  @Ignore
   @Test
   public void makePaymentToOtherUser() {
     Amount amount = new Amount(AMOUNT_EUR, CURRENCY_EUR);
@@ -60,6 +62,7 @@ public class PaymentTest extends BunqSdkTestBase {
    *
    * This test has no assertion as of its testing to see if the code runs without errors
    */
+  @Ignore
   @Test
   public void makePaymentToOtherAccount() {
     Amount amount = new Amount(AMOUNT_EUR, CURRENCY_EUR);
@@ -70,6 +73,7 @@ public class PaymentTest extends BunqSdkTestBase {
     Assert.assertNotNull(response.getValue());
   }
 
+  @Ignore
   @Test
   public void counterPartyAliasNotNullTest() {
     Pagination pagination = new Pagination();
@@ -87,6 +91,7 @@ public class PaymentTest extends BunqSdkTestBase {
     }
   }
 
+  @Ignore
   @Test
   public void paymentBatchTest() {
       BunqResponse<Integer> response = PaymentBatch.create(createPaymentForBatch());

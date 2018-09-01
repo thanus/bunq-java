@@ -5,6 +5,7 @@ import com.bunq.sdk.context.ApiContext;
 import com.bunq.sdk.exception.BunqException;
 import com.bunq.sdk.http.ApiClient;
 import org.apache.commons.io.FileUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.File;
@@ -37,6 +38,7 @@ public class AvatarTest extends BunqSdkTestBase {
    * Tests the creation of an avatar by uploading a picture via AttachmentPublic and setting it as
    * avatar via the uuid
    */
+  @Ignore
   @Test
   public void createAvatarTest() {
     byte[] fileContentsSend = getFileContentBytes(ATTACHMENT_PATH_IN);

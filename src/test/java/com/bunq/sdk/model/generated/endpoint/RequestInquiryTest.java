@@ -5,6 +5,7 @@ import com.bunq.sdk.Config;
 import com.bunq.sdk.context.ApiContext;
 import com.bunq.sdk.model.generated.object.Amount;
 import com.bunq.sdk.model.generated.object.Pointer;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -41,6 +42,7 @@ public class RequestInquiryTest extends BunqSdkTestBase {
    * Tests sending a request from monetary account 1 to monetary account 2 and accepting this
    * request
    */
+  @Ignore
   @Test
   public void createRequestInquiryTest() {
     RequestInquiry.create(

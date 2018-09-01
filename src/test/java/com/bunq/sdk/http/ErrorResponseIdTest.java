@@ -3,6 +3,7 @@ package com.bunq.sdk.http;
 import com.bunq.sdk.BunqSdkTestBase;
 import com.bunq.sdk.exception.ApiException;
 import com.bunq.sdk.model.generated.endpoint.MonetaryAccount;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotNull;
@@ -16,6 +17,7 @@ public class ErrorResponseIdTest extends BunqSdkTestBase {
 
   /**
    */
+  @Ignore
   @Test
   public void badRequestWitResponseIdTest()
   {

@@ -6,6 +6,7 @@ import com.bunq.sdk.model.generated.object.Amount;
 import org.junit.Assert;
 import org.junit.Assume;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -36,6 +37,7 @@ public class TabUsageSingleTest extends BunqSdkTestBase {
    *
    * This test has no assertion as of its testing to see if the code runs without errors
    */
+  @Ignore
   @Test
   public void createAndUpdateTabTest() {
     String tabUuid = createTab();

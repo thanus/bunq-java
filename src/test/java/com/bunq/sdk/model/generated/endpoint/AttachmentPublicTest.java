@@ -4,6 +4,7 @@ import com.bunq.sdk.BunqSdkTestBase;
 import com.bunq.sdk.exception.BunqException;
 import com.bunq.sdk.http.ApiClient;
 import org.apache.commons.io.FileUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.File;
@@ -48,6 +49,7 @@ public class AttachmentPublicTest extends BunqSdkTestBase {
   /**
    * Tests if the file we upload is the file we are getting back with the received uuid
    */
+  @Ignore
   @Test
   public void fileUploadAndRetrievalTest() {
     String uuidBefore = uploadFileAndGetUuid();
