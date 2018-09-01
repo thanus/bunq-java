@@ -267,6 +267,11 @@ public class ApiClient {
    */
   private void setCustomHeaders(Request.Builder requestBuilder, Map<String, String> customHeaders) {
     for (Map.Entry<String, String> entry : customHeaders.entrySet()) {
+
+      if (entry.getKey().equals(HEADER_GEOLOCATION)) {
+        requestBuilder.removeHeader(HEADER_GEOLOCATION);
+      }
+
       requestBuilder.addHeader(entry.getKey(), entry.getValue());
     }
   }
