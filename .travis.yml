@@ -3,6 +3,6 @@ language: java
 git:
   submodules: false
 
-script:
-  - gradle assemble
-  - gradle check
+branches:
+  only:
+  - develop
