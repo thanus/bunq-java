@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/thanus/bunqjava.svg?token=5R6CsySAEpyz7oA4xZVc&branch=develop)](https://travis-ci.com/thanus/bunqjava)
+[![Build Status](https://travis-ci.com/thanus/bunq-java.svg?branch=develop)](https://travis-ci.com/thanus/bunq-java)
 # bunq Java SDK
 
 ## Introduction
